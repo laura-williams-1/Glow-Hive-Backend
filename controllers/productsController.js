@@ -5,6 +5,7 @@ const {
   getOneProduct,
   createProduct,
   updateProduct,
+  deleteProduct
 } = require("../queries/products");
 
 products.get("/", async (req, res) => {
@@ -49,5 +50,16 @@ products.put("/:id", async (req, res) => {
     res.status(400).json({ error: error });
   }
 });
+
+products.delete("/:id", async (req, res) => {
+  const { id } = req.params;
+  
+  try {
+    const deletedProduct = await deleteProduct(id);
+    res.status(200).json(deletedProduct);
+  } catch (error) {
+    res.status(400).json({error: error});
+  }
+})
 
 module.exports = products;
