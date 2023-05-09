@@ -23,9 +23,13 @@ VALUES
 (
 'The Deep Cleanse Gentle Exfoliating Cleanser','TATCHA', 'https://assets.tatcha.com/large/large/product-images/cleansers/DeepCleanse-FS-1-main.jpg',40, 'A deep, gentle exfoliating cleanser of natural luffa fruit and wild rose that lifts dirt, minimizes excess oil, and unclogs and tightens pores, leaving skin soft and hydrated.', 5, 'Exfoliater', false, true, false),
 
-('COOKIES N CLEAN WHIPPED CLAY PORE DETOX FACE MASK WITH SALICYLIC ACID + CHARCOAL','Fenty Skin', 'https://media.kohlsimg.com/is/image/kohls/5539274?wid=1200&hei=1200&op_sharpen=1',35, 'A non-drying whipped clay mask with charcoal that deeply purifies pores. Clinically tested to instantly improve skin texture and fight shine all day.', 2.5, 'Face Mask', true,true, true);
+('COOKIES N CLEAN WHIPPED CLAY PORE DETOX FACE MASK WITH SALICYLIC ACID + CHARCOAL','Fenty Skin', 'https://media.kohlsimg.com/is/image/kohls/5539274?wid=1200&hei=1200&op_sharpen=1',35, 'A non-drying whipped clay mask with charcoal that deeply purifies pores. Clinically tested to instantly improve skin texture and fight shine all day.', 2.5, 'Face Mask', true,true, true),
 
+('Glycolic Acid 7% Toning Solution','The Ordinary','https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwc9a72f9b/Images/products/The%20Ordinary/rdn-glycolic-acid-7pct-toning-solution-240ml.png?sw=1200&sh=1200&sm=fit',13,'Glycolic Acid 7% Toning Solution is an exfoliant targeted at the surface of the skin. It helps improve skin clarity, balance uneven skin tone, and correct texture over time. This formula contains a Tasmanian Pepperberry derivative of plant origin which varies in colour seasonally and this colour variation may be apparent in the formula from time to time.',3.5,'Toner',true,true,false),
 
+('Brightening Toner', 'BYOMA','https://byoma.com/uk/wp-content/uploads/sites/2/2021/12/balancing-face-mist.png',15,'This highly concentrated brightening facial toner works to deeply clean pores, gently removing excess oil and impurities while helping to control oil production for softer, smoother skin and a more radiant complexion.
+',5.07, 'Toner',true,true,false),
 
-
+('Balancing Face Mist', 'BYOMA','https://static.thcdn.com/images/large/webp//productimg/1600/1600/13521365-1044926231074949.jpg',17,'This lightweight, pH balanced, refreshing face mist is the ultimate quick fix to instantly balance and soothe skin, supporting your microbiome for a healthier complexion.
+',3.38,'Toner',true,true, false);
 
