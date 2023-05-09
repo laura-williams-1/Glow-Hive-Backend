@@ -1,6 +1,6 @@
 const express = require("express");
 const products = express.Router();
-const {getAllProducts, getOneProduct} = require("../queries/products");
+const {getAllProducts, getOneProduct, createProduct} = require("../queries/products");
 
 products.get("/", async (req, res) => {
   const allProducts = await getAllProducts();
@@ -21,6 +21,17 @@ products.get("/:id", async (req, res) => {
   } else {
     res.status(500).json({error: "Server Error"});
   }
-})
+});
+
+products.post("/", async (req, res) => {
+  const newProduct = req.body;
+
+  try {
+    const addedProduct = await createProduct(newProduct);
+    res.status(202).json(addedProduct);
+  } catch (error){
+    res.status(400).json({error: error});
+  }
+});
 
 module.exports = products;
