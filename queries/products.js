@@ -91,10 +91,23 @@ const deleteProduct = async (id) => {
     return error;
   }
 };
+
+const searchProducts = async (searchTerm) => {
+  try {
+    const searchedProduct = await db.any(
+      "SELECT * FROM products WHERE brand ILIKE '%$1%' OR name ILIKE '%$1%' OR type ILIKE '%$1%' ",
+      searchTerm
+    );
+    return searchedProduct;
+  } catch (error) {
+    return error;
+  }
+};
 module.exports = {
   getAllProducts,
   getOneProduct,
   createProduct,
   updateProduct,
   deleteProduct,
+  searchProducts,
 };

@@ -10,7 +10,7 @@ VALUES
 
 ('Butta Drop Whipped Oil Body Cream with Tropical Oils + Shea Butter', 'Fenty Skin', 'https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FS393320FSButtaDropMini_1_1200x.jpg?v=1676403236', 44, 'A luxurious, whipped body cream enriched with tropical oils and shea butter for deeply nourished and moisturized skin',6.5, 'moisturizer', true, true,true ),
 
-('Drunk Elephant Protini Polypeptide Cream', 'Drunk Elephant', 'https://example.com/image.jpg', 68, 'A peptide-packed moisturizer with growth factors, supportive amino acids, and pygmy waterlily for immediate improvement in the appearance of skin’s tone, texture, and firmness', 1.69, 'Moisturizer', true, true, true ),
+('Drunk Elephant Protini Polypeptide Cream', 'Drunk Elephant', 'https://media.gomyz.com/600x600/media/catalog/product/_/s/_s_c_screenshot_1907_.png', 68, 'A peptide-packed moisturizer with growth factors, supportive amino acids, and pygmy waterlily for immediate improvement in the appearance of skin’s tone, texture, and firmness', 1.69, 'Moisturizer', true, true, true ),
 
 ('Lala Retro™ Whipped Cream','Drunk Elephant','https://media.ulta.com/i/ulta/2604051?w=720&fmt=webp', 62,'Lala Retro™ is a whipped dream-come-true for tired, dry skin. This multifaceted rescue cream, infused with six African oils and a plant ceramide complex, provides replenishing barrier support by reinforcing skin’s acid mantle and defending against the effects of everyday stressors.', 1.69, 'Moisturizer',true, true, true),
 
@@ -27,7 +27,7 @@ VALUES
 
 ('Glycolic Acid 7% Toning Solution','The Ordinary','https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwc9a72f9b/Images/products/The%20Ordinary/rdn-glycolic-acid-7pct-toning-solution-240ml.png?sw=1200&sh=1200&sm=fit',13,'Glycolic Acid 7% Toning Solution is an exfoliant targeted at the surface of the skin. It helps improve skin clarity, balance uneven skin tone, and correct texture over time. This formula contains a Tasmanian Pepperberry derivative of plant origin which varies in colour seasonally and this colour variation may be apparent in the formula from time to time.',3.5,'Toner',true,true,false),
 
-('Brightening Toner', 'BYOMA','https://byoma.com/uk/wp-content/uploads/sites/2/2021/12/balancing-face-mist.png',15,'This highly concentrated brightening facial toner works to deeply clean pores, gently removing excess oil and impurities while helping to control oil production for softer, smoother skin and a more radiant complexion.
+('Brightening Toner', 'BYOMA','https://images.selfridges.com/is/image/selfridges/R04126196_M?$PDP_M_ZOOM$',15,'This highly concentrated brightening facial toner works to deeply clean pores, gently removing excess oil and impurities while helping to control oil production for softer, smoother skin and a more radiant complexion.
 ',5.07, 'Toner',true,true,false),
 
 ('Balancing Face Mist', 'BYOMA','https://static.thcdn.com/images/large/webp//productimg/1600/1600/13521365-1044926231074949.jpg',17,'This lightweight, pH balanced, refreshing face mist is the ultimate quick fix to instantly balance and soothe skin, supporting your microbiome for a healthier complexion.
