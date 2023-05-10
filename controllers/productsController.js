@@ -5,7 +5,8 @@ const {
   getOneProduct,
   createProduct,
   updateProduct,
-  deleteProduct
+  deleteProduct,
+  searchProducts,
 } = require("../queries/products");
 
 products.get("/", async (req, res) => {
@@ -53,13 +54,23 @@ products.put("/:id", async (req, res) => {
 
 products.delete("/:id", async (req, res) => {
   const { id } = req.params;
-  
+
   try {
     const deletedProduct = await deleteProduct(id);
     res.status(200).json(deletedProduct);
   } catch (error) {
-    res.status(400).json({error: error});
+    res.status(400).json({ error: error });
   }
-})
+});
+
+products.get("/search", async (req, res) => {
+  const searchTerm = req.query.q;
+  try {
+    const searchedProducts = await searchProducts(searchTerm);
+    res.status(200).json(searchedProducts);
+  } catch (error) {
+    res.status(400).json({ error: error });
+  }
+});
 
 module.exports = products;
