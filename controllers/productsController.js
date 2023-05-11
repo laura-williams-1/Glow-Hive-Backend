@@ -18,7 +18,17 @@ products.get("/", async (req, res) => {
     res.status(500).json({ error: "Server Error" });
   }
 });
+products.get("/search", async (req, res) => {
+  const searchTerm = `%${req.query.q}%`;
+  try {
+    const searchedProducts = await searchProducts(searchTerm);
 
+    res.status(200).json(searchedProducts);
+    console.log(searchedProducts);
+  } catch (error) {
+    res.status(400).json({ error: error });
+  }
+});
 products.get("/:id", async (req, res) => {
   const { id } = req.params;
   const product = await getOneProduct(id);
@@ -58,16 +68,6 @@ products.delete("/:id", async (req, res) => {
   try {
     const deletedProduct = await deleteProduct(id);
     res.status(200).json(deletedProduct);
-  } catch (error) {
-    res.status(400).json({ error: error });
-  }
-});
-
-products.get("/search", async (req, res) => {
-  const searchTerm = req.query.q;
-  try {
-    const searchedProducts = await searchProducts(searchTerm);
-    res.status(200).json(searchedProducts);
   } catch (error) {
     res.status(400).json({ error: error });
   }
