@@ -7,6 +7,8 @@ const checkRequest = (req, res, next) => {
     res.status(400).json({error: "Body is missing the brand"});
   } else if (!req.body.image_url){
     res.status(400).json({error: "Body is missing the image url"});
+  } else if (!req.body.price){
+    res.status(400).json({error: "Body is missing the price"});
   } else if (!req.body.details){
     res.status(400).json({error: "Body is missing the details"});
   } else if (!req.body.size_in_oz){
