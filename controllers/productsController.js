@@ -8,6 +8,10 @@ const {
   deleteProduct,
   searchProducts,
 } = require("../queries/products");
+const {
+  checkRequest,
+  checkId
+} = require("../validations/checkProducts")
 
 products.get("/", async (req, res) => {
   const allProducts = await getAllProducts();
@@ -29,7 +33,7 @@ products.get("/search", async (req, res) => {
     res.status(400).json({ error: error });
   }
 });
-products.get("/:id", async (req, res) => {
+products.get("/:id", checkId, async (req, res) => {
   const { id } = req.params;
   const product = await getOneProduct(id);
 
@@ -40,7 +44,7 @@ products.get("/:id", async (req, res) => {
   }
 });
 
-products.post("/", async (req, res) => {
+products.post("/", checkRequest, async (req, res) => {
   const newProduct = req.body;
 
   try {
@@ -51,7 +55,7 @@ products.post("/", async (req, res) => {
   }
 });
 
-products.put("/:id", async (req, res) => {
+products.put("/:id", checkId, checkRequest, async (req, res) => {
   const { id } = req.params;
   const { body } = req;
   try {
@@ -62,7 +66,7 @@ products.put("/:id", async (req, res) => {
   }
 });
 
-products.delete("/:id", async (req, res) => {
+products.delete("/:id", checkId, async (req, res) => {
   const { id } = req.params;
 
   try {
