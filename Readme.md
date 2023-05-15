@@ -4,7 +4,7 @@
 
 ### Get all products
 
-/products
+https://glow-hive.onrender.com/products
 
 It returns every product in the database.
 
@@ -12,7 +12,7 @@ It returns every product in the database.
 
 ### Get one product
 
-/products/:id
+https://glow-hive.onrender.com/products/:id
 
 It returns a product with a specific id.
 
@@ -37,7 +37,7 @@ example data:
 
 ### Search by name, brand, or type
 
-/products/search?q=value 
+https://glow-hive.onrender.com/products/search?q=value 
 
 It returns every product which has a name, brand or type that includes the searched value.
 
